@@ -34,7 +34,8 @@ function setup() {
 
 
 function draw() {
-  background(arcticImage);
+  background(20, 200, 45);
+  //background(arcticImage);
 
   console.log(penguin.x);  
   rand = Math.round(random(1,10));
