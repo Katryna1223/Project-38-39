@@ -36,7 +36,7 @@ function draw() {
  background(arcticImage);
 
   console.log(penguin.x);  
-  rand = Math.round(random(1,10));
+  rand = Math.round(random(1,30));
 
   if(gamestate === "play"){
     camera.position.x = penguin.x;
