@@ -9,7 +9,6 @@ function preload(){
   sharkImage = loadImage("shark.png");
   arcticImage = loadImage("arctic.jpeg");
   fish1 = loadImage("fish1.png");
-  arctic = loadImage("arctic.png");
 }
 
 function setup() {
@@ -34,8 +33,7 @@ function setup() {
 
 
 function draw() {
-  background(20, 200, 45);
-  //background(arcticImage);
+ background(arcticImage);
 
   console.log(penguin.x);  
   rand = Math.round(random(1,10));
