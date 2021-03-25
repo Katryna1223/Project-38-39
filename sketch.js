@@ -1,6 +1,6 @@
 // there will be a penguin running across the screen to the right. This penguin will have to catch fish as it goes along. There will be a seal chasing the penguin. If the penguin hits one of the randomly spawned sharks, the seal will get closer for a while.   
 
-var penguin, penguinImage, fish1, fishGroup, seal, sealImage, sharkImage, sharkGroup, score=0, distance, marker, gamestate="play";
+var arctic, arcticImage, penguin, penguinImage, fish1, fishGroup, seal, sealImage, sharkImage, sharkGroup, score=0, distance, marker, gamestate="play";
 var rand;
 
 function preload(){
@@ -9,6 +9,7 @@ function preload(){
   sharkImage = loadImage("shark.png");
   arcticImage = loadImage("arctic.jpeg");
   fish1 = loadImage("fish1.png");
+  arctic = loadImage("arctic.png");
 }
 
 function setup() {
@@ -33,7 +34,7 @@ function setup() {
 
 
 function draw() {
-  background(255,255,255);
+  background(arcticImage);
 
   console.log(penguin.x);  
   rand = Math.round(random(1,10));
